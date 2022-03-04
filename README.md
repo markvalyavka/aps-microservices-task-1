@@ -17,3 +17,5 @@ docker compose -f docker/docker-compose.yml up facade_service/logging_service/me
 
 ### Example demo
 ![example](/res/demo.gif)
+
+Or check on [Youtube](https://youtu.be/DYQEDN0nzy0)

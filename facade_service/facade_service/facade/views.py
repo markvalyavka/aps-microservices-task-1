@@ -10,10 +10,8 @@ def facade_service():
     if request.method == "GET":
         logging_response = logging_gateway.get_messages()
         logging_msgs = logging_response.get("messages")
-        print(logging_msgs)
         messages_response = messages_gateway.get_messages()
         messages_msgs = messages_response.get("messages")
-        print(messages_msgs)
         return f"{logging_msgs}: {messages_msgs}"
     elif request.method == "POST":
         request_params = request.get_json()
